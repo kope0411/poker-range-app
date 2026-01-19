@@ -1,0 +1,37 @@
+{
+  "UTG": {
+    "AA":  { "raise": 100, "call": 0,  "fold": 0 },
+    "KK":  { "raise": 100, "call": 0,  "fold": 0 },
+    "AJs": { "raise": 60,  "call": 0,  "fold": 40 },
+    "AQo": { "raise": 40,  "call": 0,  "fold": 60 }
+  },
+
+  "HJ": {
+    "AJs": { "raise": 65, "call": 0,  "fold": 35 },
+    "KQs": { "raise": 60, "call": 0,  "fold": 40 }
+  },
+
+  "CO": {
+    "AJs": { "raise": 75, "call": 0,  "fold": 25 },
+    "KQs": { "raise": 70, "call": 0,  "fold": 30 },
+    "98s": { "raise": 55, "call": 0,  "fold": 45 }
+  },
+
+  "BTN": {
+    "AJs": { "raise": 85, "call": 0,  "fold": 15 },
+    "KQs": { "raise": 80, "call": 0,  "fold": 20 },
+    "98s": { "raise": 65, "call": 0,  "fold": 35 }
+  },
+
+  "SB": {
+    "AJs": { "raise": 65, "call": 20, "fold": 15 },
+    "KQs": { "raise": 60, "call": 20, "fold": 20 },
+    "98s": { "raise": 40, "call": 30, "fold": 30 }
+  },
+
+  "BB": {
+    "AJs": { "raise": 10, "call": 70, "fold": 20 },
+    "KQs": { "raise": 0,  "call": 65, "fold": 35 },
+    "98s": { "raise": 0,  "call": 60, "fold": 40 }
+  }
+}
