@@ -1,0 +1,19 @@
+{
+  "UTG": {
+    "AA":  { "raise": 100, "call": 0, "fold": 0 },
+    "KK":  { "raise": 100, "call": 0, "fold": 0 },
+    "AJs": { "raise": 60,  "call": 0, "fold": 40 }
+  },
+
+  "BTN": {
+    "AJs": { "raise": 80, "call": 10, "fold": 10 }
+  },
+
+  "SB": {
+    "AJs": { "raise": 65, "call": 20, "fold": 15 }
+  },
+
+  "BB": {
+    "AJs": { "raise": 10, "call": 70, "fold": 20 }
+  }
+}
