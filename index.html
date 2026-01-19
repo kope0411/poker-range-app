@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Poker Hand Selector</title>
+
+<style>
+  body { font-family: sans-serif; }
+  .cards { display: grid; grid-template-columns: repeat(13, 1fr); gap: 6px; }
+  .card {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    user-select: none;
+  }
+  .red { color: red; }
+  .selected { background: #4caf50; color: white; }
+  .disabled { opacity: 0.3; pointer-events: none; }
+</style>
+</head>
+
+<body>
+
+<h3>選択中のハンド</h3>
+<div id="selected"></div>
+
+<h3>正規化ハンド</h3>
+<div id="normalized"></div>
+
+<h3>カード選択</h3>
+<div class="cards" id="cardGrid"></div>
+
+<script src="cards.js"></script>
+</body>
+</html>
