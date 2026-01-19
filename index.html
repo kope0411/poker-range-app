@@ -2,11 +2,25 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8" />
-<title>Poker Hand Selector</title>
+<title>Poker Hand Range App</title>
 
 <style>
-  body { font-family: sans-serif; }
-  .cards { display: grid; grid-template-columns: repeat(13, 1fr); gap: 6px; }
+  body {
+    font-family: sans-serif;
+    padding: 16px;
+  }
+
+  h3 {
+    margin-top: 24px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 6px;
+    max-width: 520px;
+  }
+
   .card {
     border: 1px solid #ccc;
     padding: 8px;
@@ -15,19 +29,55 @@
     border-radius: 6px;
     user-select: none;
   }
-  .red { color: red; }
-  .selected { background: #4caf50; color: white; }
-  .disabled { opacity: 0.3; pointer-events: none; }
+
+  .red {
+    color: red;
+  }
+
+  .selected {
+    background: #4caf50;
+    color: white;
+  }
+
+  .disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  #result {
+    margin-top: 8px;
+    font-size: 16px;
+  }
 </style>
 </head>
 
 <body>
 
+<h2>ポーカーハンド アクション割合（6-max）</h2>
+
 <h3>選択中のハンド</h3>
-<div id="selected"></div>
+<div id="selected">未選択</div>
 
 <h3>正規化ハンド</h3>
-<div id="normalized"></div>
+<div id="normalized">-</div>
+
+<h3>ポジション（6-max）</h3>
+<select id="positionSelect">
+  <option value="">選択してください</option>
+  <option value="UTG">UTG</option>
+  <option value="HJ">HJ</option>
+  <option value="CO">CO</option>
+  <option value="BTN">BTN</option>
+  <option value="SB">SB</option>
+  <option value="BB">BB</option>
+</select>
+
+<h3>アクション割合</h3>
+<div id="result">
+  コール：- %<br>
+  レイズ：- %<br>
+  フォールド：- %
+</div>
 
 <h3>カード選択</h3>
 <div class="cards" id="cardGrid"></div>
